@@ -126,3 +126,126 @@ O método latir() foi o único método implementado na classe Cachorro
 self_Classe e self._Especie foram atributos que não pedi no construtor por escolha própria. 
 
 # Polimorfismo
+Polimorfismo, em Python, é a capacidade que uma subclasse tem de ter
+métodos com o mesmo nome de sua superclasse, e o programa saber qual
+método deve ser invocado, ou seja, o objeto tem a capacidade de assumir diferentes formas (polimorfismo).
+
+# Classes abstratas
+Vamos supor que desejamos criar uma classe mãe chamada
+FormasGeometricas que tenha os métodos para calcular a Área e
+Perímetro e também um método para Imprimir esses valores.
+
+# Classes abstratas
+Nós já sabemos criar uma classe, mas como iremos imprimir as informações se é uma classe que abrange todas as formas cada um com seu método de calcular área e perímetro específico?
+Precisamos copiar o método imprime em todas as classes filhas?
+Para resolver esses problemas, temos as classes abstratas.
+Uma classe abstrata é uma classe que serve de modelo para outras classes.
+Ela sempre será uma superclasse genérica, e suas subclasses serão mais específicas.
+
+E como fazemos em Python?
+Utilizaremos um módulo do Python chamado abc que permite definirmos
+classes abstratas. Uma classe abstrata deve herdar de ABC(Abstract Base Classes). ABC é a superclasse para classes abstratas.
+Para definirmos um método abstrato, utilizamos o decorador
+@abstractmethod
+
+# MRO
+O Python segue uma ordem específica para percorrer a hierarquia de
+classes e essa ordem é chamada de MRO: Method Resolution Order (Ordem
+de Resolução de Métodos). Com a ordem da esquerda para a direita 
+
+# Métodos Especiais
+Os métodos especiais ou mágicos em Python são utilizados para definir um comportamento específico para uma classe quando determinada operação for operada.
+
+Inicialização: obj = Novo()
+Representação: print(obj), str(obj), repr(obj), float(obj)
+Container, Sequência: len(obj), item in obj, for i in obj, obj[2:3]
+Númericos: obj + outro_obj, obj * obj, obj == outro_obj
+
+Inicialização: __init__
+Representação: __str__, __repr__, __float__
+Container, Sequência: __len__, __contains__, __iter__, __getitem__
+Númericos: __add__, __mul__, __eq__, __sub__, __mod__
+
+__str__
+Método utilizado para representar uma classe em uma string.
+
+__len__
+Método utilizado para definir o comprimento/número de elementos de uma classe.
+
+__getitem__
+Método utilizado para podemos utilizarmos o uso de colchetes [] para
+indexação.
+
+__add__
+Método utilizado para definir a soma de objetos.
+
+__call__
+É invocado quando o objeto é invocado como função.
+
+__float__
+Sua classe passa a ter o comportamento determinado por ele quando houver uma tentativa de usar a instância dessa classe como o tipo float.
+
+# Tratamento de erros
+★ Programas mais complicados, aumenta a complexidade e os bugs
+★ Programas serão programas
+★ Erros e bugs são comuns e fazem parte da sua experiência como
+programadoras
+
+Built-In Exceptions
+São vários:
+★ NameError se uma variável não é achada no código
+★ AttributeError atribuição ou refência falha
+★ IndexError index da sequência está fora de alcance
+★ ZeroDivisionError se o divisor for 0
+★ FileNotFoundError arquivo não encontrado
+
+Traceback
+Mensagens de erro são importante.
+ O traceback inclui a mensagem de erro, o número da linha que causou o erro e a sequência de funções que levaram ao erro.Essa sequência é chamada de call stack.
+
+Assertions
+Um assertion é uma tipo de checagem que pode ser feita para garantir que o seu código não esta fazendo algo obviamente errado.
+❏ assert como palavra-chave
+❏ uma condição(uma expressão avaliada para True ou False)
+❏ uma vírgula
+❏ uma string para mostrar quando a condição for False
+
+Exceptions x Assertions
+Exceptions
+❏ Para a usuária
+❏ Erros como parte do funcionamento do seu programa Assertions
+❏ Para a programadora
+❏ Falhas que que não podem ser cometidas
+❏ Não usar com try-except pois o programa deve parar
+
+Depurador (Debugger)
+Debugger é uma ferramenta que para testar e depurar o seu programa. Está presente em diversos IDEs e em versões gráficas ou pela linha de comando. Com essa ferramenta é possível interagir com seu programa durante a sua execução uma linha por vez ou pausar a execução em um ponto especifíco, examinando-o para entender seu processo e achar erros.
+
+Consiste nas seguintes funções:
+❏ * Continue
+❏ * Step In
+❏ * Step Over
+❏ * Step Out
+❏ * Stop
+❏ * Breakpoints
+
+Linha de comando:
+❏ * pdb
+❏ * ipdb
+❏ * outros.
+Gráficos:
+❏ * pudb
+❏ * IDEs
+❏ Visual Studio Code
+❏ PyCharm
+❏ * Outros
+
+# Manipulação de arquivos
+❏ Até agora, os dados que temos usado estão inseridos diretamente no código ou são digitados pelo usuário. Na vida real, dados estão em arquivos e precisamos aprender a manipulá-los.
+❏ Iremos dividir o conteúdo em: arquivos texto e arquivos de planilhas.
+
+Abrindo arquivo texto
+❏ A função open() pode ser utilizada para criar, ler ou substituir um arquivo: open(‘nome_arquivo’, 'modo')
+❏ Atente-se que só funcionará se seu código e o arquivo estiverem no mesmo diretório ou se você quiser criar um novo arquivo no mesmo diretório.
+❏ Depois de aberto, um arquivo passa a ser um objeto Python. Armazene a informação em uma variável! 
+
