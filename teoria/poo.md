@@ -11,7 +11,7 @@ Programação estruturada:
 Existe uma grande função (ou rotina) que rege o programa.
 Claro elas podem ser dividida em sub-rotinas, mas se todas elas fossem adicionadas ao código formaria uma rotina grande
 
-POO consiste principalmente em:
+**POO consiste principalmente em:**
 1. Classes: Conjunto de características e comportamentos que definem um objeto.
 2. Objetos: é uma instância (ou seja, um exemplar) de uma classe.
 3. Os conceitos utilizados na Programação estruturada: sequências, condições, repetições.
@@ -37,7 +37,7 @@ eles são os nomes usados em POO.
 
 Classes -> sempre começa com letra maiuscula
 
-Criar a classe: 
+**Criar a classe:**
 * função init inicia quanto o objeto é instanciado! conhecida como metodo construtor. 
 class Pyladies:
     def __init__(self, nome_e, quantidade_e, tem_homens_e, nome_dos_membros_e, data_de_criacao_e):
@@ -49,7 +49,7 @@ class Pyladies:
         self.data_de_criacao = data_de_criacao_e
         print('Você criou um objeto! :)
 
-Metodos
+**Metodos**
     utiliza-se def para criar os metodos. É necessario usar self como paramtro. 
 
     def Dar_curso(self):
@@ -57,8 +57,7 @@ Metodos
     def Apresentar_todas_infos(self):
         print(f"\n{self.nome}\n{self.quantidade}\n{self.tem_homens}\n{self.nome_dos_membros}\n{self.data_de_criacao}")
 
-instanciar o objeto: dentro dos parenteses, nos passamos os atributos como parametros da função
-pyladies_brasil= Pyladies("Pyladies Franca", 20, False, "Gabriela, Julia, Carolina, Neide, Creuza", "01/10/2020")
+**instanciar o objeto:** dentro dos parenteses, nos passamos os atributos como parametros da função pyladies_brasil= Pyladies("Pyladies Franca", 20, False, "Gabriela, Julia, Carolina, Neide, Creuza", "01/10/2020")
 
 quando fazemos isso, o objeto carrega todas as funções que estão dentro da identação
 
@@ -73,15 +72,16 @@ print('\n', pyladies_brasil.nome_dos_membros)
 print('\n', pyladies_brasil.data_de_criacao)
 
 # POO - Encapsulamento 
+
 Se alguns desses atributos forem facilmente visíveis e modificáveis, como o Nome do grupo ou a Quantidade de membros, isso pode dar liberdade para que alterações sejam feitas, resultando em efeitos colaterais imprevisíveis.
 Nessa analogia, uma pessoa pode confundir alguma variável do programa com um atributo importante, criando efeitos colaterais que podem trazer problemas no futuro para saber a quantidade de membros que havia, por exemplo. Chamamos esse tipo de atributos visíveis.
 
-Na POO, um atributo ou método que não é visível (não é modificável) de fora do próprio objeto é chamado de "privado" e quando é visível, é chamado de "público".
+**Na POO, um atributo ou método que não é visível (não é modificável) de fora do próprio objeto é chamado de "privado" e quando é visível, é chamado de "público".**
 
 Esse encapsulamento de atributos e métodos impede o chamado vazamento de escopo, onde um atributo ou método é visível por alguém que não deveria vê-lo, como outro objeto ou classe.
-Ler ou alterar um atributo encapsulado pode ser feito a partir de getters ( função get() ) e setters ( função set() )
+**Ler ou alterar um atributo encapsulado pode ser feito a partir de getters ( função get() ) e setters ( função set() )**
 
-Conclusão
+**Conclusão**
 ● Para criarmos atributos privados colocamos __NomeDoAtributo.
 E para acessa-lo ou modifica-los usamos os métodos get() e set().
 Importante
@@ -90,7 +90,7 @@ protegidos, para declarar-los usamos _NomeDoAtributo. E os
 manipulamos com os mesmos métodos. Explicaremos para que
 servem em Heranças.
 
-Métodos getters e setters
+**Métodos getters e setters**
 ● Então como vimos temo os atributos que podem ser públicos,
 privados ou protegidos
 ● Para acessa-los precisamos usar métodos específicos (getters e
