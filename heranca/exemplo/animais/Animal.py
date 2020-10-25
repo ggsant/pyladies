@@ -8,7 +8,7 @@ class Animal:
         self._Especies = None
     
     def Infos(self):
-        print(f'\nNome: {self._Nome} \nPeso: {self._Peso} \nIdade: {self._Idade} \nClasse: {self._Classe}\nEspecie: {self._Especie}')
+        print(f'\nNome: {self._Nome} \nPeso: {self._Peso} \nIdade: {self._Idade} \nClasse: {self._Classe}\nEspecie: {self._Especies}')
     
     def Comer(self):
         print(f'O {self._Especies} está comendo')
