@@ -31,9 +31,15 @@
 
 # Repositorios
 [TheAlgorithms](https://github.com/TheAlgorithms/Python)
+
 [GeekComputers](https://github.com/geekcomputers/Python)
+
 [Awesome Python](https://github.com/vinta/awesome-python)
+
 [system-design-primer](https://github.com/donnemartin/system-design-primer)
+
 [django](https://github.com/django/django)
+
 [Pyladies-São-Carlos](https://github.com/PyLadiesSanca)
+
 [Pyladies-BR](https://github.com/pyladies-brazil)
