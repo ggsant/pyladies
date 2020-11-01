@@ -130,10 +130,6 @@ Polimorfismo, em Python, é a capacidade que uma subclasse tem de ter
 métodos com o mesmo nome de sua superclasse, e o programa saber qual
 método deve ser invocado, ou seja, o objeto tem a capacidade de assumir diferentes formas (polimorfismo).
 
-# Classes abstratas
-Vamos supor que desejamos criar uma classe mãe chamada
-FormasGeometricas que tenha os métodos para calcular a Área e
-Perímetro e também um método para Imprimir esses valores.
 
 # Classes abstratas
 Nós já sabemos criar uma classe, mas como iremos imprimir as informações se é uma classe que abrange todas as formas cada um com seu método de calcular área e perímetro específico?
